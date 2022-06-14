@@ -36,10 +36,6 @@ app.get("/image/:image", (req, res) => {
   res.sendFile(__dirname + `/uploads/${req.params.image}`);
 });
 
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-
 app.listen(process.env.PORT, () => {
   console.log(`Server running on port 5000`);
 });
