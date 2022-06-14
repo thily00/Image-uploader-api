@@ -36,6 +36,6 @@ app.get("/image/:image", (req, res) => {
   res.sendFile(__dirname + `/uploads/${req.params.image}`);
 });
 
-app.listen(8080, () => {
+app.listen(5000, () => {
   console.log(`Server running on port 8080`);
 });
